@@ -1,6 +1,32 @@
-body {
+.row, .col {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid white;
+}
+
+html {
     background-image: url("./images/darkwoodBG.png");
-    margin: 0;
+}
+
+body {
+    margin: 30px;
+    border-radius: 30px;
+    background-color: rgb(30,30,30);
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+header {
+    text-align: center;
+}
+
+.App-logo {
+    padding: 30px;
+}
+
+.Icon {
+    padding: 20px;
+}
+
+.col {
+    text-align: center;
 }

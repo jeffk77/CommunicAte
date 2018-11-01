@@ -64,19 +64,30 @@ class App extends Component {
     render() {
         return (
             <div>
-                
+
                 {/* {this.state.loggedIn && */}
-                <p className="white-text">Join the party, {this.state.username}!</p>
+                {/* <p className="white-text">Join the party, {this.state.username}!</p> */}
                 {/* } */}
 
                 <div className="App">
-                    <header className="App-header">
-                        <img src={Logo} className="responsive-img App-logo" alt="logo" />
+                    <header className="valign-wrapper">
+                        <div className="row">
+                            <div className="col l8 m12 s12">
+                                <img src={Logo} className="responsive-img App-logo" alt="logo" />
+                            </div>
+                            <div className="col l4 m12 s12">
+                                <Link to="/"><img className="responsive-img Icon" src={homeIcon} alt="Home Icon" /></Link>
+                                <Link to="/Customer"><img className="responsive-img Icon" src={customerIcon} alt="Customer Icon" /></Link>
+                                <Link to="/Restaurant"><img className="responsive-img Icon" src={restaurantIcon} alt="Restaurant Icon" /></Link>
+                            </div>
+                        </div>
                     </header>
-                    <div className="menu">
-                        <Link to="/"><img src={homeIcon} className="responsive-img Home-Icon" alt="Home Icon" /></Link>
-                        <Link to="/messages"><img src={customerIcon} className="responsive-img Customer-Icon" alt="Customer Icon" /></Link>
-                        <Link to="/about"><img src={restaurantIcon} className="responsive-img Restaurant-Icon" alt="Restaurant Icon" /></Link>
+
+
+                    {/* <div className="menu">
+                        <Link to="/"></Link>
+                        <Link to="/messages"></Link>
+                        <Link to="/about"></Link>
                     </div>
                     <div className="App-intro">
                         <Switch>
@@ -85,10 +96,9 @@ class App extends Component {
                             <Route path="/about" component={About} />
                             <Redirect to="/" />
                         </Switch>
-                    </div>
+                    </div> */}
                 </div>
 
-                <DBPlayground />
             </div>
         );
     }
